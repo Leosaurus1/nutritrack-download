@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriTrack – Download</title>
+    <!-- Einbindung der Schriftart Inter aus deinem Entwurf -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            min-height: 100vh;
+            /* Zentriert die Box perfekt vertikal und horizontal auf allen Geräten */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #f8fafc;
+            border: 3.5px solid #0f172a;
+            width: 100%;
+            max-width: 440px;
+            padding: 40px 30px;
+            text-align: center;
+            /* Subtiler moderner Schatten passend zum Rahmen */
+            box-shadow: 6px 6px 0px #0f172a;
+        }
+
+        h1 {
+            color: #eab308;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        p.subtitle {
+            color: #0f172a;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #22c55e;
+            color: #0f172a;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 8px;
+            border: 2px solid #0f172a;
+            transition: transform 0.15s ease, background-color 0.15s ease;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background-color: #16a34a;
+            transform: translateY(-2px);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .file-info {
+            margin-top: 16px;
+            font-size: 12px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Tracke deine Ernährung</h1>
+        <p class="subtitle">Mit NutriTrack.</p>
+
+        <!-- Der eigentliche Download-Button -->
+        <a href="nutritrack.zip" download="NuriTrack.zip" class="download-btn">
+            <!-- Dein SVG-Icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Download (ZIP)</span>
+        </a>
+
+        <div class="file-info">
+            Version vom 23.11.2026 • ca. 80 KB
+        </div>
+    </div>
+
+</body>
+</html>
